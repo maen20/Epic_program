@@ -29,7 +29,7 @@ public class Main {
         do {
             if(y%2==0)
                 System.out.println("even: "+y);
-            else if (y%2!=2)
+            else if (y%2!=0)
                 System.out.println("odd: "+y);
             y++;
         }
