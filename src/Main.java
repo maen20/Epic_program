@@ -7,7 +7,7 @@ public class Main {
 
 
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        System.out.println("***FOR loop ***");
+        System.out.println("***FOR Loop ***");
         int sum = 0;
         int sum2=0;
         int sum_1=0;
