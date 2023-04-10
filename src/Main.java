@@ -10,33 +10,42 @@ public class Main {
         System.out.println("***FOR loop ***");
         int sum = 0;
         int sum2=0;
+        int sum_1=0;
+
         for (int i = 0; i <= 100; i++) {
             if(i%2==0){
             sum += i;}
             else if(i%2!=0){
                 sum2 +=i;}
+            if(i%7==0){
+                sum_1+=i;
+            }
         }
         System.out.println("The even numbers sum =" + sum);
         System.out.println("The odd numbers sum =" + sum2);
+        System.out.println("sum of numbers divided by 7= "+ sum_1);
         System.out.println("***while loop ***");
 
         int sum3=0;
         int sum4=0;
+        int sum_2=0;
         int i=0;
         while(i<=100){
             if(i%2==0){
                 sum3 += i;}
             else if(i%2!=0){
                 sum4 +=i;}
+            if(i%7==0){
+                sum_2+=i;
+            }
             i++;
         }
         System.out.println("The even numbers sum =" + sum3);
         System.out.println("The odd numbers sum =" + sum4);
+        System.out.println("sum of numbers divided by 7= "+ sum_2);
         System.out.println("***do while***");
         int x=0;
-
         int sum5=0;
-
         do{
             sum5 += x;
             x+=2;
@@ -53,5 +62,16 @@ public class Main {
         }
         while(y<=100);
         System.out.println("The odd numbers sum =" + sum6);
+
+        int w=0;
+        int sum_3=0;
+        do{
+           if(w%7==0)
+               sum_3+=w;
+            w++;
+        }
+        while(w<=100);
+        System.out.println("sum of numbers divided by 7= "+ sum_3);
+
     }
 }
