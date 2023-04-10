@@ -7,32 +7,51 @@ public class Main {
 
 
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
+        System.out.println("***FOR loop ***");
+        int sum = 0;
+        int sum2=0;
+        for (int i = 0; i <= 100; i++) {
+            if(i%2==0){
+            sum += i;}
+            else if(i%2!=0){
+                sum2 +=i;}
+        }
+        System.out.println("The even numbers sum =" + sum);
+        System.out.println("The odd numbers sum =" + sum2);
+        System.out.println("***while loop ***");
 
-        for(int i=0;i<=100;i++){
-          if(i%2==0)
-              System.out.println("even: "+i);
-          else if(i%2!=0)
-              System.out.println("odd: "+i);
+        int sum3=0;
+        int sum4=0;
+        int i=0;
+        while(i<=100){
+            if(i%2==0){
+                sum3 += i;}
+            else if(i%2!=0){
+                sum4 +=i;}
+            i++;
         }
-        System.out.println("-----while loop------");
-   int x=0;
-        while(x<=100){
-            if(x%2==0)
-                System.out.println("even: "+x);
-            else if(x%2!=0)
-                System.out.println("odd: "+x);
-            x++;
-        }
-        System.out.println("-----DO-WHILE-----");
+        System.out.println("The even numbers sum =" + sum3);
+        System.out.println("The odd numbers sum =" + sum4);
+        System.out.println("***do while***");
+        int x=0;
 
-        int y = 0;
-        do {
-            if(y%2==0)
-                System.out.println("even: "+y);
-            else if (y%2!=0)
-                System.out.println("odd: "+y);
-            y++;
+        int sum5=0;
+
+        do{
+            sum5 += x;
+            x+=2;
+
         }
-        while (y <=100);
+        while(x<=100);
+        System.out.println("The even numbers sum =" + sum5);
+        int y=1;
+        int sum6=0;
+        do{
+            sum6 += y;
+            y+=2;
+
+        }
+        while(y<=100);
+        System.out.println("The odd numbers sum =" + sum6);
     }
 }
