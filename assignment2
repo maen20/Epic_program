@@ -1,0 +1,29 @@
+public class Main {
+    public static void main(String[] args) {
+
+         int evenSummation=sumofevensto100(0,101,0);
+        System.out.println("result1= "+evenSummation);
+        int oddsSummation=sumofoddsto100(1,101,0);
+        System.out.println("result2= "+oddsSummation);
+        int sumofdivsiblenumbers=sumofnumbersDIVby7(0,101,0);
+        System.out.println("result3= "+sumofdivsiblenumbers);
+
+
+    }
+
+    public static int sumofevensto100(int initial,int limit,int sum){
+        return initial>100 ?sum
+                :sumofevensto100(initial+1,limit,sum+initial);
+
+    }
+    public static int sumofoddsto100(int initial,int limit,int sum){
+        return initial>100 ?sum
+                :sumofoddsto100(initial+2,limit,sum+initial);
+
+    }
+    public static int sumofnumbersDIVby7(int initial,int limit,int sum){
+        return initial>100? sum
+                :sumofnumbersDIVby7(initial+7,limit,sum+initial);
+    }
+
+    }
