@@ -1,4 +1,4 @@
-import java.util.Arrays;
+//import java.util.Arrays;
 public class Assignment3 {
     public static void main(String[] args) {
    int[] array={-1,5,0,1,9,3}; //6
