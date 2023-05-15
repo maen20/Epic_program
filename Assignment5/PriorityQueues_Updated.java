@@ -10,14 +10,11 @@ public class PriorityQueues {
     }
     public void addElement(int e) {
         higherQueue.add(e);
-        if (higherQueue.size() > 2) {
+       if (higherQueue.size()-lowerQueue.size()>2) {
             int smallest = higherQueue.poll();
             lowerQueue.add(smallest);
         }
-        if (lowerQueue.size() > higherQueue.size()) {
-            int highest = lowerQueue.poll();
-            higherQueue.offer(highest);
-        }
+        
     }
 
     public void print() {
